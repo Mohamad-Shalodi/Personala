@@ -218,11 +218,14 @@ html {
 }
 
 #info h2 {
-    width: max-content;
+    width: 355px;
     font-size: 36px;
     margin-bottom: 40px;
     border-bottom: 0.5px solid rgb(196,155,102);
     font-family: 'Josefin Sans', sans-serif;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 #info p {
@@ -325,5 +328,65 @@ html {
 
 
 #services {
-    height: 800px;
+    min-height: 550px;
+    padding: 0px 80px;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    display: block;
+}
+
+#services h2 {
+    width: 215px;
+    margin: auto;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    border-bottom: 0.5px solid rgb(196,155,102);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.service-card {
+    margin: auto;
+    min-width: 250px;
+    max-width: 350px;
+    height: 220px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: rgba(196,155,102, 0) 1px 1px 5px 20px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    box-shadow: rgba(196,155,102, 0.05) 2px 2px 5px 10px;
+}
+
+.service-card i {
+    width: 100%;
+    flex: 3;
+    font-size: 48px;
+    color: rgb(196,155,102);
+}
+
+.service-card h3 {
+    width: 100%;
+    flex: 2;
+    font-size: 24px;
+}
+
+.service-card p {
+    width: 100%;
+    flex: 4;
+    font-size: 16px;
+    color: rgb(163, 163, 163);
 }

@@ -36,7 +36,7 @@ $(window).scroll(function() {
 });
 
 
-var sentences = ["Mohamad Shalodi", "Web Developer", "Problem Solver"];
+var sentences = ["Web Developer", "Problem Solver", "Mohamad Shalodi"];
 var isWriting = false;
 var sentenceIndex = sentences.length-1;
 var indexInSentence = -1;

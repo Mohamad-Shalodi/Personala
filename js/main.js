@@ -1,6 +1,10 @@
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
     $("#home").css("background-position-y", scroll/2);
+    let skillsscroll = (scroll - $("#home").height() - $("#about").height())/2;
+    if(skillsscroll < 0)
+        skillsscroll = 0;
+    $("#skills").css("background-position-y", skillsscroll);
     if (scroll >= 50)
         $("#navBar").addClass("navBarScrolled");
     else if(scroll <= 20)

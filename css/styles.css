@@ -370,6 +370,7 @@ html {
 #services h2 {
     width: 218px;
     margin: auto;
+    padding-top: 50px;
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 20px;

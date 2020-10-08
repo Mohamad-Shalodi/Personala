@@ -4,7 +4,12 @@ $(window).scroll(function () {
     let skillsscroll = (scroll - $("#home").height() - $("#about").height()) / 2;
     if (skillsscroll < -250)
         skillsscroll = -250;
+    let contactscroll = scroll;
     $("#skills").css("background-position-y", skillsscroll * 2 / 3);
+
+    if (contactscroll < 0)
+        contactscroll = 0;
+    //$("#contact").css("background-position-y", -contactscroll);
 
     if (scroll >= 50)
         $("#navBar").addClass("navBarScrolled");
